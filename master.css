@@ -80,7 +80,7 @@ header .header-buttons a img {
 
 /* ## Content */
 section.content {
-  padding: 20px 12px;
+  padding: 20px 12px 0;
 }
 section.content section.slide {
   width: 100%;
