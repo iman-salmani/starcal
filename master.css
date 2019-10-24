@@ -1,0 +1,332 @@
+/* In the name of Allah -- CSS 3 */
+
+/*
+Summary of code
+## Elements
+## Header
+## Content
+ # Home
+   -Init
+   -Features
+   -Contributors
+   -Dependencies
+   -Spanshots
+   -License
+   -Git Clone
+ # Download
+   -Header
+   -Table
+## Installation
+*/
+
+/* ## Elements */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #444;
+  font-size: 14px;
+  font-family: Helvetica, Arial, FreeSans, sans-serif;
+  line-height: 1.6;
+}
+a {
+  cursor: pointer;
+}
+svg {
+  vertical-align: middle;
+  fill: currentColor;
+}
+code {
+  display: block;
+  background: #f6f8fa;
+  padding: 8px;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+.flex-separator {
+  flex: 1 0 auto;
+}
+
+/* ## Header */
+header {
+  display: flex;
+  height: 64px;
+  padding: 0 12px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 0 5px #ddd;
+}
+
+header a:first-child {
+  text-decoration: none;
+  color: #333;
+  line-height: 64px;
+  font-size: 24px;
+}
+
+header .header-buttons a {
+  line-height: 64px;
+  padding: 16px 8px;
+  color: #444;
+}
+header .header-buttons a img {
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+}
+
+/* ## Content */
+section.content {
+  padding: 20px 12px;
+}
+section.content section.slide {
+  width: 100%;
+  display: none;
+  text-align: center;
+}
+section.content section.slide:first-child {
+  display: block;
+}
+section.content > section {
+  max-width: 1024px;
+  margin: 48px auto 16px;
+  text-align: center;
+}
+
+/* # Home */
+section#home img {
+  width: 128px;
+  height: 128px;
+}
+section#home h1 a {
+  font-size: 1.7em;
+  text-decoration: none;
+  color: #333;
+}
+section#home .description {
+  margin: 20px 0;
+  font-weight: normal;
+}
+section#home nav.menu {
+  padding: 18px 0 12px;
+}
+section#home nav.menu a {
+  padding: 0.5% 2%;
+  border-right: 1px solid #ccc;
+  color: #48e;
+}
+section#home nav.menu a:last-child {
+  border: none;
+}
+section#home ul.features {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+section#home ul.features li {
+  margin-top: 45px;
+}
+section#home ul.features li:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+section#home ul.features li img {
+  width: 45%;
+  height: auto;
+}
+section#home ul.features li article {
+  float: right;
+  width: 50%;
+  padding-left: 5%;
+  text-align: left;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+section#home ul.features li:nth-child(2n+2) article {
+  float: left;
+  padding-left: 0;
+}
+@media (max-width:768px) {
+  section#home ul.features li img {width: 90%; margin: 0 5%;}
+  section#home ul.features li article {width: 95%;}
+}
+section#home ul#contributors {
+  padding: 15px 0;
+  list-style: none;
+  margin: 15px 0;
+  border-top: 1px solid #ddd;
+}
+section#home ul#contributors h3 {
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+section#home ul#contributors:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+section#home ul#contributors li {
+  float: left;
+  width: 40%;
+  background: #48e;
+  border-radius: 0 0 25px 0;
+  color: #fff
+}
+section#home ul#contributors li h4 {
+  margin: 8px 0 0 12px;
+  text-align: left;
+}
+section#home ul#contributors li nav {
+  padding: 8px;
+}
+section#home ul#contributors li nav:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+section#home ul#contributors li span {
+  float: left;
+  padding-left: 10px;
+}
+section#home ul#contributors li a {
+  float: right;
+}
+section#home ul#contributors li a svg {
+  color: #fff;
+}
+section#home #dependencies,
+section#home #spanshots,
+section#home #git-clone,
+section#home #iufsc {
+  text-align: left;
+  border-top: 1px solid #ddd;
+}
+section#home #git-clone {
+  padding-bottom: 20px;
+}
+section#home #git-clone p {
+  margin-left: 20px;
+}
+section#home #license {
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+}
+
+/* # Download */
+section#download .header {
+  width: 100%;
+  text-align: left;
+}
+section#download .header h2 {
+  text-align: center;
+}
+section#download .header .links {
+  margin: 24px 0;
+  text-align: center;
+  font-size: 0;
+}
+section#download .header .links a {
+  display: inline-block;
+  width: 32%;
+  margin-right: 2%;
+  margin-bottom: 12px;
+  padding: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #444;
+  transition: 300ms;
+}
+section#download .header .links a:nth-child(3n+3) {margin-right: 0;}
+section#download .header .links a:hover {background: #444; border-color: #444;}
+section#download .header .links a:nth-child(3) {color: #c72438;border-color: #c72438;} /* debian */
+section#download .header .links a:hover:nth-child(3) {background: #c72438;}
+section#download .header .links a:nth-child(4) {color: #73ba25;border-color: #73ba25;} /* openSUSE */
+section#download .header .links a:hover:nth-child(4) {background: #73ba25;}
+section#download .header .links a:nth-child(5) {color: #294172;border-color: #294172;} /* Fedora */
+section#download .header .links a:hover:nth-child(5) {background: #294172;}
+section#download .header .links a:nth-child(6) {color: #4294d2;border-color: #4294d2;} /* Arch Linux */
+section#download .header .links a:hover:nth-child(6) {background: #4294d2;}
+section#download .header .links a:hover {color: #fff;}
+section#download .header ul.changes {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-left: 18px;
+}
+
+section#download table {
+  width: 100%;
+  border-collapse: collapse;
+}
+section#download tr td {
+  min-width: 15%;
+  padding: 12px 0 6px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  line-height: 2;
+}
+section#download tr:first-child td,
+section#download tr:hover td {
+  border-bottom-color: #48e;
+  background: #f5f5f5;
+}
+
+section#download tr td a {
+  color: #48e;
+}
+
+/* ## Installation */
+section.installation {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+section.installation h2 {
+  padding: 12px 0;
+}
+section.installation nav.release {
+  display: grid;
+}
+section.installation nav.release a {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  cursor: pointer;
+  display: inline-block;
+  background: #ddd;
+  padding: 24px 0;
+  color: #fff;
+}
+section.installation nav.release a:nth-child(n+4) {
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+section.installation nav.release a:hover {
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.35);
+}
+section.installation nav.release a span:first-child {
+  font-size: 18px;
+}
+section.installation article.guide {
+  text-align: left;
+  padding: 24px 16px;
+  color: #fff;
+}
+section.installation article.guide h3 {
+  margin: 0;
+  padding: 18px 12px 24px 0;
+}
+section.installation article.guide code {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
