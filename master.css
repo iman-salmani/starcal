@@ -39,10 +39,12 @@ svg {
   fill: currentColor;
 }
 code {
-  display: block;
   background: #f6f8fa;
   padding: 8px;
   border-radius: 4px;
+}
+section#home code {
+  display: block;
   margin-left: 20px;
 }
 .flex-separator {
