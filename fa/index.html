@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<!-- In the name of Allah -->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="A full-featured international calendar written in Python">
+    <meta name="keywords" content="star calendar, calendar, international, software, app, python, prayer, تقویم ستاره, استار کال, تقویم, نرم افزار, زبان پایتون, تقویم ایرانی, تقویم همه کاره, تقویم بین المللی">
+    <title>Star Calendar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="SHORTCUT ICON" type="./images/png" href="./images/starcal.png">
+    <link rel="ICON" type="./images/png" href="./images/starcal.png">
+    <link rel="stylesheet" href="./master.css">
+  </head>
+  <body>
+    <header>
+      <a id="home-button">Star Calendar</a>
+      <div class="flex-separator"></div>
+      <nav class="header-buttons">
+        <a id="download-button">
+          <img src="./images/download.svg">
+        </a>
+        <a href="https://github.com/ilius/starcal">
+          <svg version="1.1" width="32" height="32" viewBox="0 0 16 16" class="octicon octicon-mark-github" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+        </a>
+      </nav>
+    </header>
+    <section id="content" class="content">
+      <section id="home" class="slide">
+        <img src="./images/starcal.svg">
+        <h1><a href="http://ilius.github.io/starcal">StarCalendar</a></h1>
+        <h2 class="description">A full-featured international calendar written in Python</h2>
+        <p>StarCalendar is a Free and Open Source full-featured international calendar written in Python, supporting Jalali/Persian, Garigorian and Islamic calendar.</p>
+        <nav class="menu">
+          <a href="#features">what is this?</a>
+          <a href="#contributors">contributors</a>
+          <a href="#dependencies">for developers</a>
+        </nav>
+        <ul id="features" class="features">
+          <li>
+            <img src="./screenshots/30-fa-preferences-gerenal.png">
+            <article>
+              <h3>International</h3>
+              <p>This calendar has good features for different countries and ethnicities and supports Gregory, Solar, Hijri, Indian National and more.</p>
+            </article>
+          </li>
+          <li>
+            <img src="screenshots/30-fa-event-manager.png">
+            <article>
+            <h3>Event Manager</h3>
+            <p>Add, Subject, Prioritize Events</p>
+          </article>
+          </li>
+          <li>
+            <img src="screenshots/30-fa-customize-monthcal.png">
+            <article>
+              <h3>Customize</h3>
+              <p>You decide whether something is on the page or not.</p>
+            </article>
+          </li>
+          <li>
+            <img src="screenshots/30-fa-mainwin-default.png">
+            <article>
+              <h3>Simple For Users</h3>
+              <p>You don't know what this is. Hold the mouse on it!</p>
+            </article>
+          </li>
+          <li>
+            <img src="screenshots/30-fa-preferences-prayertime2.png">
+            <article>
+              <h3>Support Prayer Times</h3>
+              <p>Suitable for all people everywhere with the ability to play azan and pre-azan audio</p>
+            </article>
+          <li>
+            <img src="screenshots/30-fa-timeline.png">
+            <article>
+              <h3>Time Line</h3>
+              <p>Great for time management</p>
+            </article>
+          </li>
+          <li>
+            <img src="screenshots/30-fa-preferences-plugins.png">
+            <article>
+              <h3>Plugins</h3>
+              <p>Add the ones you want to add to the calendar!</p>
+            </article>
+          </li>
+          <li>
+            <img src="screenshots/30-fa-preferences-advanced2.png">
+            <article>
+              <h3>Preferences</h3>
+              <p>More settings in settings.<br>We strive to make the calendar convenient for everyone everywhere.</p>
+            </article>
+          </li>
+        </ul>
+        <ul id="contributors">
+          <h3>contributors</h3>
+          <li>
+            <h4 class="name">Saeed Rasooli</h4>
+            <nav>
+              <span class=>Lead Programmer</span>
+              <a href="https://github.com/ilius"><svg version="1.1" width="32" height="32" viewBox="0 0 16 16" class="octicon octicon-mark-github" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+            </nav>
+          </li>
+        </ul>
+        <div id="dependencies">
+          <h3>Dependencies for StarCalendar 3.1</h3>
+          <ul>
+            <li>Python 3.x (>= 3.5)</li>
+            <li>python3-gi (gobject-introspection binding)</li>
+            <li>python3-gi-cairo</li>
+            <li>python3-httplib2</li>
+            <li>python3-dateutil</li>
+            <li>python3-psutil</li>
+            <li>python3-requests</li>
+            <li>python3-igraph (optional)</li>
+          </ul>
+          <h3>Dependencies for StarCalendar 2.4</h3>
+          <ul>
+            <li>Python 2.7</li>
+            <li>PyGTK</li>
+            <li>python-gobject (old binding)</li>
+            <li>python-httplib2</li>
+            <li>python-igraph (optional)</li>
+            <li>python-dateutil (optional)</li>
+          </ul>
+        </div>
+        <div id="spanshots">
+          <h3>Spanshots</h3>
+          <ul>
+            <li><a href="http://github.com/ilius/starcal/tarball/master">Stable Snapshot (master branch)</a></li>
+            <li><a href="http://github.com/ilius/starcal/tarball/next">Unstable Snapshot (next branch)</a></li>
+          </ul>
+        </div>
+        <div id="git-clone">
+          <h3>Git Clone</h3>
+          <p>You can also clone the project with <a href="http://git-scm.com">Git</a> by running:</p>
+          <code>$ git clone git://github.com/ilius/starcal</code>
+        </div>
+        <div id="iufsc">
+            <h3>Installation and Uninstallation from source code</h3>
+            <h4>Ubuntu:</h4>
+            <code>$ sudo bash ./install-ubuntu</code>
+            <code>$ sudo apt-get remove starcal3</code>
+            <h4>Debian or other Debian-based distributions:</h4>
+            <code>$ sudo bash ./install-debian</code>
+            <code>$ sudo apt-get remove starcal3</code>
+            <h4>ArchLinux</h4>
+            <code>$ bash ./install-archlinux</code>
+            <code>$ sudo pacman -R starcal3</code><br>
+            or:<br>
+            <code>$ yaourt -S starcal</code>
+            <code>$ sudo pacman -R starcal</code>
+            <h4>openSUSE</h4>
+            <code>$ sudo bash ./install-suse</code>
+            <code>$ sudo zypper remove starcal3</code>
+            <h4>Fedora</h4>
+            <code>$ sudo bash ./install-fedora</code>
+            <code>$ sudo yum remove starcal3</code>
+            <h4>Other distributions:</h4>
+            <code>$ sudo bash ./install</code>
+            <code>$ sudo /usr/share/starcal3/uninstall</code>
+            <h4>Running on Windows:</h4>
+            <ul>
+              <li>Install Python 3.x</li>
+              <li>Install Gtk3 and PyGI</li>
+              <li>Copy starcal source folder somewhere you want to keep</li>
+              <li>Send a shortcut from file starcal.pyw (inside source folder) to you desktop</li>
+              <li>Click on the shortcut to starcal.pyw (or the file itself) to run</li>
+            </ul>
+        </div>
+        <p id="license">
+          <svg class="octicon octicon-law" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"></path></svg>
+          <span>GPLv3 (with some LGPL)</span>
+        </p>
+      </section>
+      <section id="download" class="slide">
+          <div class="header">
+            <h2>StarCalendar 3.1.6</h2>
+            <div class="links">
+                <a href="https://github.com/ilius/starcal/releases/tag/3.1.6">3.1.6</a>
+                <a href="https://github.com/ilius/starcal/archive/3.1.6.tar.gz">
+                  Tar.gz
+                </a>
+                <a href="https://github.com/ilius/starcal/releases/download/3.1.6/starcal3_3.1.6-1_all.deb">
+                  Debian
+                </a>
+                <a href="https://github.com/ilius/starcal/releases/download/3.1.6/starcal3-3.1.6-1.noarch-openSUSE.rpm">
+                  OpenSUSE
+                </a>
+                <a href="https://github.com/ilius/starcal/releases/download/3.1.6/starcal3-3.1.6-1.noarch-Fedora.rpm">
+                  Fedora
+                </a>
+                <a href="https://github.com/ilius/starcal/releases/download/3.1.6/starcal3-3.1.6-1-any.pkg.tar.xz">
+                  Arch Linux
+                </a>
+            </div>
+            <h3>changes</h3>
+            <ul class="changes">
+              <li>
+              <p>Fixes in Jalali code:</p>
+              <ul>
+              <li>Fix <code>isLeap</code> calculation, causing some non-critical bugs</li>
+              <li>Fix problem with negative years with 2820-years algorithm</li>
+              <li>Add tests</li>
+              <li>Some cleaning / refactoring</li>
+              </ul>
+              </li>
+              <li>
+              <p>Add tests for Gregorian code</p>
+              </li>
+              <li>
+              <p>Fix exporting plugins to ics (<a class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="480266218" data-permission-text="Issue title is private" data-url="https://github.com/ilius/starcal/issues/58" data-hovercard-type="issue" data-hovercard-url="/ilius/starcal/issues/58/hovercard" href="https://github.com/ilius/starcal/issues/58">#58</a>)</p>
+              </li>
+              <li>
+              <p>Fix sorting events (Event Manager)</p>
+              <ul>
+              <li>Was not working since switching to Python3</li>
+              </ul>
+              </li>
+              <li>
+              <p>Fix exporting events to ics</p>
+              <ul>
+              <li>Replace newline with <code>\n</code> in <code>SUMMARY</code></li>
+              <li>Add <code>DESCRIPTION</code></li>
+              </ul>
+              </li>
+              <li>
+              <p>Fix in Event Manager -&gt; Add/Edit Group dialog</p>
+              <ul>
+              <li>Bug: group-type-specific options were hidden</li>
+              </ul>
+              </li>
+              <li>
+              <p>Fix bug in Import Events:</p>
+              <ul>
+              <li>Possible exception: <code>ValueError: min() arg is an empty sequence</code></li>
+              </ul>
+              </li>
+              <li>
+              <p>Fix some minor bugs:</p>
+              <ul>
+              <li>Fix exception in IdComboBox.get_active</li>
+              <li>Fix exception in IntSpinButton when text is empty
+              <ul>
+              <li>ValueError: invalid literal for int() with base 10: ''</li>
+              </ul>
+              </li>
+              <li>Fix bug in Event.copyRulesFrom
+              <ul>
+              <li>Causing rules not be copied into custom event in EventEditoDialog</li>
+              </ul>
+              </li>
+              <li>Fix direction of date labels in status bar for RTL languages</li>
+              </ul>
+              </li>
+              <li>
+              <p>Fix bugs in code, not effecting the user</p>
+              <ul>
+              <li>Fix misspelled word Seperator</li>
+              <li>Fix broken gdkColorToRgb function (not used)</li>
+              </ul>
+              </li>
+              <li>
+              <p>Better compatibility with <code>next</code> branch (future release <code>3.2.0</code>)</p>
+              <ul>
+              <li><code>winContronller.py</code>: make (more or less) compatible with next branch</li>
+              <li>Change default height of WeekCal and MonthCal to 400 px</li>
+              </ul>
+              </li>
+            </ul>
+          </div>
+          <table>
+              <tbody><tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/3.1.6">3.1.6</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/3.1.6.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.6/starcal3_3.1.6-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.6/starcal3-3.1.6-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.6/starcal3-3.1.6-1.noarch-Fedora.rpm">
+                    Fedora
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.6/starcal3-3.1.6-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/3.1.5">3.1.5</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/3.1.5.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.5/starcal3_3.1.5-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.5/starcal3-3.1.5-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.5/starcal3-3.1.5-1.noarch-Fedora.rpm">
+                    Fedora
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.5/starcal3-3.1.5-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/3.1.4">3.1.4</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/3.1.4.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.4/starcal3_3.1.4-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.4/starcal3-3.1.4-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.4/starcal3-3.1.4-1.noarch-Fedora.rpm">
+                    Fedora
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.4/starcal3-3.1.4-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/3.1.3">3.1.3</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/3.1.3.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.3/starcal3_3.1.3-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.3/starcal3-3.1.3-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.3/starcal3-3.1.3-1.noarch-Fedora.rpm">
+                    Fedora
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.3/starcal3-3.1.3-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/3.1.2">3.1.2</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/3.1.2.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.2/starcal3_3.1.2-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.2/starcal3-3.1.2-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.2/starcal3-3.1.2-1.noarch-Fedora.rpm">
+                    Fedora
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.2/starcal3-3.1.2-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/3.1.1">3.1.1</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/3.1.1.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.1/starcal3_3.1.1-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.1/starcal3-3.1.1-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.1/starcal3-3.1.1-1.noarch-Fedora.rpm">
+                    Fedora
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.1/starcal3-3.1.1-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/3.1.0">3.1.0</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/3.1.0.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.0/starcal3_3.1.0-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.0/starcal3-3.1.0-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.0/starcal3-3.1.0-1.noarch-Fedora.rpm">
+                    Fedora
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.1.0/starcal3-3.1.0-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/3.0.7">3.0.7</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/3.0.7.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.7/starcal3_3.0.7-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.7/starcal3-3.0.7-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/3.0.6">3.0.6</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/3.0.6.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.6/starcal3_3.0.6-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.6/starcal3-3.0.6-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.6/starcal3-3.0.6-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/3.0.5">3.0.5</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/3.0.5.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.5/starcal3_3.0.5-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.5/starcal3-3.0.5-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.5/starcal3-3.0.5-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/3.0.4">3.0.4</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/3.0.4.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.4/starcal3_3.0.4-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.4/starcal3-3.0.4-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.4/starcal3-3.0.4-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/3.0.3">3.0.3</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/3.0.3.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.3/starcal3_3.0.3-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.3/starcal3-3.0.3-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.3/starcal3-3.0.3-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/3.0.2">3.0.2</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/3.0.2.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.2/starcal3_3.0.2-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.2/starcal3-3.0.2-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.2/starcal3-3.0.2-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/3.0.1">3.0.1</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/3.0.1.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.1/starcal3_3.0.1-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.1/starcal3-3.0.1-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.1/starcal3-3.0.1-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/3.0.0">3.0.0</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/3.0.0.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.0/starcal2_3.0.0-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.0/starcal3-3.0.0-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/3.0.0/starcal3-3.0.0-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/2.4.5">2.4.5</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/2.4.5.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.5/starcal2_2.4.5-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.5/starcal2-2.4.5-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/2.4.4">2.4.4</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/2.4.4.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.4/starcal2_2.4.4-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.4/starcal2-2.4.4-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.4/starcal2-2.4.4-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/2.4.3">2.4.3</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/2.4.3.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.3/starcal2_2.4.3-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.3/starcal2-2.4.3-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.3/starcal2-2.4.3-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/2.4.2">2.4.2</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/2.4.2.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.2/starcal2_2.4.2-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.2/starcal2-2.4.2-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.2/starcal2-2.4.2-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/2.4.1">2.4.1</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/2.4.1.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.1/starcal2_2.4.1-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.1/starcal2-2.4.1-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.1/starcal2-2.4.1-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/tag/2.4.0">2.4.0</a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/archive/2.4.0.tar.gz">
+                    Tar.gz
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.0/starcal2_2.4.0-1_all.deb">
+                    Debian
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.0/starcal2-2.4.0-1.noarch-openSUSE.rpm">
+                    OpenSUSE
+                  </a>
+                </td>
+                <td >
+                  <a href="https://github.com/ilius/starcal/releases/download/2.4.0/starcal2-2.4.0-1-any.pkg.tar.xz">
+                    Arch
+                  </a>
+                </td>
+              </tr>
+            </tbody></table>
+      </section>
+      <script src="./main.js"></script>
+  </body>
+</html>
