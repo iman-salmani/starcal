@@ -16,6 +16,7 @@ Summary of code
  # Download
    -Header
    -Table
+## Footer
 */
 
 /* ## Elements */
@@ -36,6 +37,7 @@ a {
 svg {
   vertical-align: middle;
   fill: currentColor;
+  color: #444;
 }
 code {
   background: #f6f8fa;
@@ -214,10 +216,6 @@ section#home #git-clone {
 section#home #git-clone p {
   margin-left: 20px;
 }
-section#home #license {
-  border-top: 1px solid #ddd;
-  padding-top: 8px;
-}
 
 /* # Download */
 section#download .header {
@@ -257,13 +255,6 @@ section#download .header .links a:hover:nth-child(5) {background: #294172;}
 section#download .header .links a:nth-child(6) {color: #4294d2;border-color: #4294d2;} /* Arch Linux */
 section#download .header .links a:hover:nth-child(6) {background: #4294d2;}
 section#download .header .links a:hover {color: #fff;}
-section#download .header ul.changes {
-  margin-bottom: 24px;
-  padding-bottom: 24px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  padding-left: 18px;
-}
 
 section#download table {
   width: 100%;
@@ -286,4 +277,19 @@ section#download tr:hover td {
 
 section#download tr td a {
   color: #48e;
+}
+
+/* ## Footer */
+footer {
+  display: flex;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 0 8px #eee;
+}
+footer a {
+  color: #48e;
+}
+footer > span {
+  font-size: 13px;
+  line-height: 48px;
+  padding: 0 6px;
 }
