@@ -176,6 +176,9 @@ section#home ul#contributors li {
   border-radius: 0 0 25px 0;
   color: #fff
 }
+@media (max-width:768px) {
+  section#home ul#contributors li {width: 100%;}
+}
 section#home ul#contributors li h4 {
   margin: 8px 0 0 12px;
   text-align: left;
