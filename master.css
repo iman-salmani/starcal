@@ -9,13 +9,12 @@ Summary of code
    -Init
    -Features
    -Contributors
-   -Dependencies
-   -Spanshots
-   -License
-   -Git Clone
  # Download
    -Header
    -Table
+   -Dependencies
+   -Spanshots
+   -Git Clone
 ## Footer
 */
 
@@ -28,7 +27,7 @@ body {
   padding: 0;
   color: #444;
   font-size: 14px;
-  font-family: Helvetica, Arial, FreeSans, sans-serif;
+  font-family: Vazir, Helvetica, Arial, FreeSans, sans-serif;
   line-height: 1.6;
 }
 a {
@@ -47,6 +46,9 @@ code {
 }
 .flex-separator {
   flex: 1 0 auto;
+}
+.fa {
+  display: none;
 }
 
 /* ## Header */
@@ -76,6 +78,13 @@ header .top a img {
   width: 36px;
   height: 36px;
   vertical-align: middle;
+}
+header .top a svg {
+  color: #999;
+}
+header .top a:hover svg,
+header .top a:active svg {
+  color: #444;
 }
 header img.logo {
   width: 128px;
@@ -156,7 +165,7 @@ section#home ul.features li:nth-child(2n+2) article {
 }
 @media (max-width:768px) {
   section#home ul.features li img {width: 90%; margin: 0 5%;}
-  section#home ul.features li article {width: 95%;}
+  section#home ul.features li article {width: 95%; text-align: center !important;}
 }
 section#home ul#contributors {
   padding: 15px 0;
@@ -184,7 +193,7 @@ section#home ul#contributors li {
   section#home ul#contributors li {width: 100%;}
 }
 section#home ul#contributors li h4 {
-  margin: 8px 0 0 12px;
+  margin: 8px 12px 0 12px;
   text-align: left;
 }
 section#home ul#contributors li nav {
@@ -207,6 +216,9 @@ section#home ul#contributors li a svg {
 }
 
 /* # Download */
+section#download {
+  padding-top: 20px;
+}
 section#download .header {
   width: 100%;
   text-align: left;
@@ -293,6 +305,7 @@ footer {
 }
 footer a {
   color: #48e;
+  text-decoration: none;
 }
 footer > span {
   font-size: 13px;
