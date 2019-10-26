@@ -45,21 +45,15 @@ code {
   border-radius: 4px;
   
 }
-section#home code {
-  display: block;
-  margin-left: 20px;
-}
 .flex-separator {
   flex: 1 0 auto;
 }
 
 /* ## Header */
 header {
-  display: flex;
-  height: 64px;
-  padding: 0 12px;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 5px #ddd;
+  text-align: center;
 }
 
 header a:first-child {
@@ -68,16 +62,48 @@ header a:first-child {
   line-height: 64px;
   font-size: 24px;
 }
-
-header .header-buttons a {
+header .top {
+  display: flex;
+  height: 64px;
+  padding: 0 12px;
+}
+header .top a {
   line-height: 64px;
   padding: 16px 8px;
   color: #444;
 }
-header .header-buttons a img {
+header .top a img {
   width: 36px;
   height: 36px;
   vertical-align: middle;
+}
+header img.logo {
+  width: 128px;
+  height: 128px;
+}
+header h1 a {
+  font-size: 1.7em;
+  text-decoration: none;
+  color: #333;
+}
+header .description {
+  margin: 20px 0;
+  font-weight: normal;
+}
+header nav.main-menu {
+  display: flex;
+}
+header nav.main-menu a {
+  padding: 6px 12px 2px;
+  text-decoration: none;
+  color: #444;
+}
+header nav.main-menu a.current {
+  border-bottom: 1px solid #00c853;
+  color: #00c853;
+}
+header nav.main-menu a:last-child {
+  border: none;
 }
 
 /* ## Content */
@@ -99,30 +125,6 @@ section.content > section {
 }
 
 /* # Home */
-section#home img {
-  width: 128px;
-  height: 128px;
-}
-section#home h1 a {
-  font-size: 1.7em;
-  text-decoration: none;
-  color: #333;
-}
-section#home .description {
-  margin: 20px 0;
-  font-weight: normal;
-}
-section#home nav.menu {
-  padding: 18px 0 12px;
-}
-section#home nav.menu a {
-  padding: 0.5% 2%;
-  border-right: 1px solid #ccc;
-  color: #48e;
-}
-section#home nav.menu a:last-child {
-  border: none;
-}
 section#home ul.features {
   list-style: none;
   padding: 10px 0;
@@ -203,19 +205,6 @@ section#home ul#contributors li a {
 section#home ul#contributors li a svg {
   color: #fff;
 }
-section#home #dependencies,
-section#home #spanshots,
-section#home #git-clone,
-section#home #iufsc {
-  text-align: left;
-  border-top: 1px solid #ddd;
-}
-section#home #git-clone {
-  padding-bottom: 20px;
-}
-section#home #git-clone p {
-  margin-left: 20px;
-}
 
 /* # Download */
 section#download .header {
@@ -277,6 +266,23 @@ section#download tr:hover td {
 
 section#download tr td a {
   color: #48e;
+}
+section#download #dependencies,
+section#download #spanshots,
+section#download #git-clone,
+section#download #iufsc {
+  text-align: left;
+  border-top: 1px solid #ddd;
+}
+section#download #iufsc code {
+  display: block;
+  margin-left: 20px;
+}
+section#download #git-clone {
+  padding-bottom: 20px;
+}
+section#download #git-clone p {
+  margin-left: 20px;
 }
 
 /* ## Footer */
