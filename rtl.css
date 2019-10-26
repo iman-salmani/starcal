@@ -1,0 +1,30 @@
+/* In the name of Allah -- CSS 3 */
+html {
+    direction: rtl;
+}
+.en {
+    display: none;
+}
+.fa {
+    display: block;
+}
+span.fa,
+a.fa {
+    display: initial;
+}
+section#home ul#contributors li,
+section#home ul#contributors li span {
+    float: right;
+}
+section#home ul#contributors li a {
+    float: left;
+}
+section#home ul.features li article,
+section#home ul#contributors li h4,
+section#home #dependencies,
+section#home #spanshots,
+section#home #git-clone,
+section#home #iufsc,
+section#download .header {
+    text-align: right;
+}
