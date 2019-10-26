@@ -94,7 +94,7 @@ header nav.main-menu {
   display: flex;
 }
 header nav.main-menu a {
-  padding: 6px 12px 2px;
+  padding: 10px 20px 4px;
   text-decoration: none;
   color: #444;
 }
