@@ -28,3 +28,10 @@ section#home #iufsc,
 section#download .header {
     text-align: right;
 }
+section#download .header .links a {
+    margin-left: 2%;
+    margin-right: 0;
+}
+section#download .header .links a:nth-child(3n+3) {
+    margin-left: 0;
+}
