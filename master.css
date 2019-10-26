@@ -245,6 +245,19 @@ section#download .header .links a {
   color: #444;
   transition: 300ms;
 }
+section#download .header .links a:last-child {
+  width: 100%;
+  margin-right: 0;
+  display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+section#download .header .links a:last-child span {
+  line-height: 32px;
+}
+section#download .header .links a:last-child:hover svg {
+  color: #fff;
+}
 section#download .header .links a:nth-child(3n+3) {margin-right: 0;}
 section#download .header .links a:hover {background: #444; border-color: #444;}
 section#download .header .links a:nth-child(3) {color: #c72438;border-color: #c72438;} /* debian */
