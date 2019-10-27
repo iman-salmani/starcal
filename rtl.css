@@ -38,3 +38,6 @@ section#download .header .links a {
 section#download .header .links a:nth-child(3n+3) {
     margin-left: 0;
 }
+footer #license {
+    direction: ltr;
+}
