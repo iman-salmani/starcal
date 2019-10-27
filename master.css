@@ -330,11 +330,15 @@ footer {
   box-shadow: 0 0 8px #eee;
 }
 footer a {
-  color: #48e;
+  color: #666;
   text-decoration: none;
 }
+footer svg {
+  color: #999;
+}
 footer > span {
-  font-size: 13px;
-  line-height: 48px;
+  font-size: 12px;
+  line-height: 38px;
   padding: 0 6px;
+  color: #666;
 }
