@@ -12,6 +12,9 @@ span.fa,
 a.fa {
     display: initial;
 }
+header nav.top {
+    direction: ltr;
+}
 section#home ul#contributors li {
     border-radius: 0 0 0 25px;
 }
